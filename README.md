@@ -25,6 +25,8 @@ We can model many problems as a Markov Decision Process or POMDP. We define a re
 
 ### Deep Learning and Reinforcement Learning 
 
+[What is DeepRL - David Silver](https://youtu.be/MrIFte_rOh0)
+
 Must know topics: 
 
 Vocabulary: Know what states, actions, trajectories, policies, rewards, value functions, and action-value functions are. If you’re unfamiliar, Spinning Up ships with an introduction to this material; it’s also worth checking out the RL-Intro from the OpenAI Hackathon, or the exceptional and thorough overview by Lilian Weng. Optionally, if you’re the sort of person who enjoys mathematical theory, study up on the math of monotonic improvement theory (which forms the basis for advanced policy gradient algorithms), or classical RL algorithms (which despite being superseded by deep RL algorithms, contain valuable insights that sometimes drive new research).
