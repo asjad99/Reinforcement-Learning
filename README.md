@@ -1,14 +1,19 @@
-## Decision Making  (Optimal Decision in Prescene of uncertainty with probability:) 
+### Optimal Decision Making under uncertainty 
+
+#### probability: 
 
 - http://www.datasciencecourse.org/notes/probability/ 
 
+
+---------
+
+
 ### Markov decision Processes and Reinforcement Learning:  
 
-We can model many problems as a Markov Decision Process or POMDP. We define a reward function that captures out goals and we then find a policy that maximuses the sum of future rewards.
-This is similar to Operations Research techniques focused on selecting the best element from a set of available alternatives to maximize a utility function. 
+We can model many problems as a Markov Decision Process or POMDP. We define a reward function that captures out goals and we then find a policy that maximuses the sum of future rewards. This is similar to Operations Research techniques focused on selecting the best element from a set of available alternatives to maximize a utility function. 
 
 
-#### My Notes on RL Theory: 
+#### RL Theory: 
   - 3 pillers of reinforcement learning 
   - Exploration vs Exploitaion 
   - [RL in the Real World: Challenges and Opportunities](https://asjadkhan.ghost.io/real-world-rl/?fbclid=IwAR0jDaeMeALcSnEZu3gVq1MfZQegeXbWuWYt5W3PJNV1NiSePABsoAvS2EY)
@@ -24,11 +29,23 @@ Must know topics:
 
 Vocabulary: Know what states, actions, trajectories, policies, rewards, value functions, and action-value functions are. If you’re unfamiliar, Spinning Up ships with an introduction to this material; it’s also worth checking out the RL-Intro from the OpenAI Hackathon, or the exceptional and thorough overview by Lilian Weng. Optionally, if you’re the sort of person who enjoys mathematical theory, study up on the math of monotonic improvement theory (which forms the basis for advanced policy gradient algorithms), or classical RL algorithms (which despite being superseded by deep RL algorithms, contain valuable insights that sometimes drive new research).
 
-Algorithms: start with vanilla policy gradient (also called REINFORCE), DQN, A2C (the synchronous version of A3C), PPO (the variant with the clipped objective), and DDPG, approximately in that order. The simplest versions of all of these can be written in just a few hundred lines of code (ballpark 250-300), and some of them even less (for example, a no-frills version of VPG can be written in about 80 lines). Write single-threaded code before you try writing parallelized versions of these algorithms. (Do try to parallelize at least one.)
+Algorithms:
+
+-  vanilla policy gradient (also called REINFORCE)
+-  DQN
+-  A2C (the synchronous version of A3C)
+-  PPO (the variant with the clipped objective)
+-  DDPG
+
+The simplest versions of all of these can be written in just a few hundred lines of code (ballpark 250-300), and some of them even less (for example, a no-frills version of VPG can be written in about 80 lines). Write single-threaded code before you try writing parallelized versions of these algorithms. (Do try to parallelize at least one.)
+
+
+### Sucess Stories: 
+
+
+
 
 #### Deep Q-Network (DQN):
-
-
     - For artificial agents to be considered truly intelligent they should excel at a wide variety of tasks that are considered challenging for humans. Until this point, it had only been possible to create individual algorithms capable of mastering a single specific domain. 
     - Successfully combining Deep Learning (processing perception) with RL (decision-making) at scale for the first time 
     - is able to master a diverse range of Atari 2600 games to superhuman level with only the raw pixels and score as inputs.
@@ -40,11 +57,11 @@ Algorithms: start with vanilla policy gradient (also called REINFORCE), DQN, A2C
 
 #### AlphaGo:
 
-    - Enormous Search Space and impossible to write evaluation function
+   - Enormous Search Space and impossible to write evaluation function
     - Top players use intution and insticts rather than calculuation like in chess
         Components:
         
-    - Monte Carlo Tree Search (certain variant with PUCT function for tree traversal):https://int8.io/monte-carlo-tree-search-beginners-guide/
+   - Monte Carlo Tree Search (certain variant with PUCT function for tree traversal):https://int8.io/monte-carlo-tree-search-beginners-guide/
     - Residual Convolutional Neural Networks – policy and value network(s) used for game evaluation and move prior probability estimation
     - Policy Network tries  to predict the move that human was going to
     -     play by training on 100k human games downloaded from internet
@@ -56,7 +73,7 @@ Algorithms: start with vanilla policy gradient (also called REINFORCE), DQN, A2C
 
 #### AlphaGo Zero: 
 
-    - Latest and greatest version of AlphaGo
+   - Latest and greatest version of AlphaGo
     - Fully automated pipeline - No bootstrapping from human data 
     - Starts from completely random play with 'zero knowledge'
     - plays against itself millions of times
@@ -64,8 +81,7 @@ Algorithms: start with vanilla policy gradient (also called REINFORCE), DQN, A2C
     - Even Stronger, more efficient and more general
 
 #### Alpha Zero: 
-
-    - Trained on three perfect information games (chess, shogi and Go)
+   - Trained on three perfect information games (chess, shogi and Go)
     - Chess engines are highly specialized systems using a whole bag of handcrafted hurrisitics, extensions and domain knowledge
     - Alpha Zero replaces all of that with Self-play reinforcement Learning + Self-Play Monte Carlo Tree Search 
     - No Openbook or endgame database or Heuristics 
@@ -84,6 +100,7 @@ This is a step towards building AI systems which accomplish well-defined goals i
   - [Supporting Knowledge Instensive Processes in Clincial Settings]() 
 
 #### Resources 
+  - Spinning up in DeepRL 
   - [Introduction to deep RL by Lex Fridman](https://www.youtube.com/watch?v=zR11FLZ-O9M&feature=youtu.be)
   - [Long Peek into RL](https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html)
   - [Math of RL](https://www.youtube.com/watch?app=desktop&v=LiaEmNToeQA&list=PLTPQEx-31JXhguCush5J7OGnEORofoCW9&index=17&t=0s)
