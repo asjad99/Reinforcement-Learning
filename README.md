@@ -2,6 +2,11 @@
 
 #### probability: 
 
+
+
+
+
+Learn More: 
 - http://www.datasciencecourse.org/notes/probability/ 
 
 
@@ -14,14 +19,20 @@ We can model many problems as a Markov Decision Process or POMDP. We define a re
 
 
 #### RL Theory: 
-  - 3 pillers of reinforcement learning 
-  - Exploration vs Exploitaion 
+  - [3 pillers of reinforcement learning](https://www.asjadk.io/untitled-4/) 
+  - [Exploration vs Exploitaion](https://www.asjadk.io/strategic-exploration-in-online-decision-making/)
   - [RL in the Real World: Challenges and Opportunities](https://asjadkhan.ghost.io/real-world-rl/?fbclid=IwAR0jDaeMeALcSnEZu3gVq1MfZQegeXbWuWYt5W3PJNV1NiSePABsoAvS2EY)
-  - Counterfactual Policy Evaluation  
+  - [Counterfactual Policy Evaluation](https://www.asjadk.io/counterfactual-policy-evaluation/)  
+  - [safe RL](https://github.com/asjad99/Deep-Reinforcement-Learning/blob/main/Safe_RL.MD)
+
+
+
 
 [Combined notes] (https://paper.dropbox.com/doc/0.-Introduction--BFT_TqCOHWpWkWGTSgv3iWSwAg-8pHcTKBEfCeEqLMswL2w0)
 
-[safe RL](https://paper.dropbox.com/doc/5.-Literature-Review-Safe-RL--BFQDQH9OuT5kQXiGRJm_uroAAg-5T9ss2yPag01K3m7J2pf8)
+
+----
+
 
 ### Deep Learning and Reinforcement Learning 
 
@@ -42,9 +53,11 @@ Algorithms:
 The simplest versions of all of these can be written in just a few hundred lines of code (ballpark 250-300), and some of them even less (for example, a no-frills version of VPG can be written in about 80 lines). Write single-threaded code before you try writing parallelized versions of these algorithms. (Do try to parallelize at least one.)
 
 
-### Sucess Stories: 
+### Case Studies:: 
 
 
+#### My Project: 
+  - [Supporting Knowledge Instensive Processes in Clincial Settings]() 
 
 
 #### Deep Q-Network (DQN):
@@ -98,8 +111,6 @@ OpenAI created a bot which beats the world’s top professionals at 1v1 matches 
 This is a step towards building AI systems which accomplish well-defined goals in messy, complicated situations involving real humans.”
  https://blog.openai.com/dota-2/
 
-#### My Project: 
-  - [Supporting Knowledge Instensive Processes in Clincial Settings]() 
 
 #### Resources 
   - Spinning up in DeepRL 
