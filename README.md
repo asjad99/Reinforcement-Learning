@@ -246,6 +246,20 @@ read more:
 
 ### Research ideas: 
 
+
+
+‘immitation learning’ aka Demonstration Learning
+
+Inverse Reinforcement Learning:
+
+
+
+
+
+
+
+
+
 ### Case A:  When Expert is available
 
 ‘immitation learning’: For example recent work by Hester et al.  [1] shows that we can leverage small sets of demonstration data to massively accelerate the learning process even from relatively small amounts of demonstration data
